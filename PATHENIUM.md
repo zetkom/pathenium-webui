@@ -21,4 +21,3 @@ Before middleware integration, identify the exact upstream release/commit for 25
 3. Validate read-only access and API compatibility against the lab.
 4. Implement safe ACL repair only after backup, preview, and rollback are tested.
 
-Pathenium is not dependent on GargoTN.
