@@ -45,6 +45,13 @@ export class NavigationService {
       state: 'sharing',
     },
     {
+      name: T('Pathenium'),
+      type: MenuItemType.Link,
+      tooltip: T('Pathenium'),
+      icon: tnIconMarker('folder-search', 'mdi'),
+      state: 'pathenium',
+    },
+    {
       name: T('Data Protection'),
       type: MenuItemType.Link,
       tooltip: T('Data Protection'),
