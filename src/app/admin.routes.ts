@@ -16,6 +16,11 @@ export const adminRoutes: Routes = [
     canActivateChild: [BlockingActionGuardService],
     children: [
       {
+        path: 'pathenium',
+        loadComponent: () => import('app/pages/pathenium/pathenium.component').then((module) => module.PatheniumComponent),
+        data: { title: T('Pathenium'), breadcrumb: T('Pathenium') },
+      },
+      {
         path: 'dashboard',
         loadComponent: () => import('app/pages/dashboard/components/dashboard/dashboard.component').then((module) => module.DashboardComponent),
         data: { title: T('Dashboard'), breadcrumb: T('Dashboard') },
